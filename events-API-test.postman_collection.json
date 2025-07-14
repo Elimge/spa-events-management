@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "869b5c71-2292-42db-bc7b-a0c83cdb9af1",
+		"name": "Events API - Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46191469",
+		"_collection_link": "https://miguelcanedo-3992885.postman.co/workspace/Miguel-Canedo-'s-Workspace~a7777305-c11e-4e6e-8f97-74b77e0db861/collection/46191469-869b5c71-2292-42db-bc7b-a0c83cdb9af1?action=share&source=collection_link&creator=46191469"
+	},
+	"item": [
+		{
+			"name": "Get all events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create events",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Test event from Postman\",\n  \"description\": \"This was created on postman to be tested\",\n  \"location\": \"Test audience\",\n  \"date\": \"2025-12-31\",\n  \"capacity\": 25,\n  \"attendees\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\": \"Description updated by Postman.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/events/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"events",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/events/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"events",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

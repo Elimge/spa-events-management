@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@events.com",
+      "password": "admin123",
+      "role": "administrator"
+    },
+    {
+      "id": 2,
+      "email": "visitor1@test.com",
+      "password": "visitor123",
+      "role": "visitor"
+    },
+    {
+      "email": "visitor2@event.com",
+      "password": "1234",
+      "role": "visitor",
+      "id": 3
+    },
+    {
+      "email": "visitor3@events.com",
+      "password": "12345",
+      "role": "visitor",
+      "id": 4
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Bad Bunny's concert",
+      "description": "Description updated by Postman.",
+      "location": "Estadio Metropolitano Roberto Melendez",
+      "date": "2026-01-20",
+      "capacity": 1,
+      "attendees": [
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Junior match",
+      "description": "Junior Vs America on the second matchday of the league",
+      "location": "Estadio Metropolitano Roberto Melendez",
+      "date": "2025-07-20",
+      "capacity": 40000,
+      "attendees": [
+        4
+      ]
+    },
+    {
+      "title": "Test event from Postman",
+      "description": "This was created on postman to be tested",
+      "location": "Test audience",
+      "date": "2025-12-31",
+      "capacity": 25,
+      "attendees": [],
+      "id": 4
+    }
+  ]
+}

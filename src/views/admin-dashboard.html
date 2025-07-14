@@ -1,0 +1,34 @@
+<!-- Admin view for Event Management -->
+<h1>Event Management (Admin)</h1>
+
+<!-- Container for the list of events -->
+<div id="event-list" class="event-container">
+    <!-- Events will be rendered here by JavaScript -->
+</div>
+
+<hr>
+
+<h2>Create / Update Event</h2>
+<form id="event-form">
+    <div>
+        <label for="event-title">Title:</label>
+        <input type="text" id="event-title" required>
+    </div>
+    <div>
+        <label for="event-description">Description:</label>
+        <textarea id="event-description" required></textarea>
+    </div>
+    <div>
+        <label for="event-location">Location:</label>
+        <input type="text" id="event-location" required>
+    </div>
+    <div>
+        <label for="event-date">Date:</label>
+        <input type="date" id="event-date" required>
+    </div>
+    <div>
+        <label for="event-capacity">Capacity:</label>
+        <input type="number" id="event-capacity" required min="1">
+    </div>
+    <button type="submit">Create Event</button>
+</form>
