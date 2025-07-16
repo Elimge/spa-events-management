@@ -126,3 +126,8 @@ You can also register new "visitor" accounts through the registration page.
 -   **Clan:** Manglar
 -   **ID:** 9.999.999.999
 -   **Email:** Elimge_u@outlook.com (no exist)
+
+## Pending
+- Better README.MD
+- Better delete
+- Functions on utils 
